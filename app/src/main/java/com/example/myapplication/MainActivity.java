@@ -7,6 +7,9 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -73,9 +76,59 @@ public class MainActivity extends AppCompatActivity {
                     data = inputStreamReader.read();
                 }
 
-                Log.i("URL info ",result);
+                JSONArray jsonArray = new JSONArray(result);
 
-                return  result;
+                int numberOfItems = 20;
+
+                if(jsonArray.length() < 20)
+                {
+                    numberOfItems = jsonArray.length();
+                }
+
+                for(int i=0;i<numberOfItems;i++)
+                {
+                    String articleId = jsonArray.getString(i);
+                    url = new URL("https://hacker-news.firebaseio.com/v0/item/"+ articleId +".json?print=pretty");
+                    urlConnection = (HttpURLConnection)url.openConnection();
+                    inputStream = urlConnection.getInputStream();
+                    inputStreamReader = new InputStreamReader(inputStream);
+
+                    data = inputStreamReader.read();
+
+                    String articleInfo = "";
+                    while(data!=-1)
+                    {
+                        char current = (char)data;
+                        articleInfo += current;
+                        data = inputStreamReader.read();
+                    }
+
+                    JSONObject jsonObject = new JSONObject(articleInfo);
+
+                    if(!jsonObject.isNull("title") && !jsonObject.isNull("url")){
+                        String articleTitle = jsonObject.getString("title");
+                        String articleUrl = jsonObject.getString("url");
+
+                        url = new URL(articleUrl);
+                        urlConnection = (HttpURLConnection) url.openConnection();
+                        inputStream = urlConnection.getInputStream();
+                        inputStreamReader = new InputStreamReader(inputStream);
+                        data = inputStreamReader.read();
+                        String articleContent = "";
+                        while(data!=-1)
+                        {
+                            char current = (char)data;
+                            articleContent+= current;
+                            data = inputStreamReader.read();
+                        }
+                        Log.i("Article Info ",articleContent);
+                    }
+                }
+
+                Log.i("URL Content ",result);
+                return result;
+
+
 
             }catch (Exception e)
             {
