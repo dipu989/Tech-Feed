@@ -7,6 +7,19 @@
 
 This App shows top tech news :newspaper: in user's feed. This app uses HackerNews API to fetch latest news and display on the screen. Users can read more about the news by clicking on any one of them.
 
+## How to Build Your own instance?
+
+### Requirements
+1) Git
+2) Android Studio
+
+### Steps
+
+1) Go ahead and fork the Project to make your own instance of this project.
+2) Then type `git clone https://github.com/your_usernam/Tech-Feeds`
+3) Build this project using android studio.
+
+
 ## Screenshot of Home Page.
 
  ![Home Page](https://user-images.githubusercontent.com/31280303/52397531-e930ba80-2adb-11e9-8345-3219ab4c531e.png)
