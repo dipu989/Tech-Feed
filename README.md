@@ -1,7 +1,8 @@
 # Tech-Feeds Android App
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c1bfc87395154198b0e4093d34c734c5)](https://app.codacy.com/app/dipu989/Tech-Feeds?utm_source=github.com&utm_medium=referral&utm_content=dipu989/Tech-Feeds&utm_campaign=Badge_Grade_Dashboard)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![HitCount](http://hits.dwyl.io/dipu989/Tech-Feeds.svg)](http://hits.dwyl.io/dipu989/Tech-Feeds)<br>
+[![HitCount](http://hits.dwyl.io/dipu989/Tech-Feeds.svg)](http://hits.dwyl.io/dipu989/Tech-Feeds)
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Tech-Feeds/community#)<br>
 
 ## About App
 
@@ -31,7 +32,7 @@ This App shows top tech news :newspaper: in user's feed. This app uses HackerNew
 ## What's Next?
 There is always a scope of improvement :smiley:<br>
 Any Suggestions?<br>
-Feel free to open an issue!
+Feel free to join our [chat](https://gitter.im/Tech-Feeds/community#) channel.
 
 ## License
 Tech-Feeds app is registered under the MIT License. Checkout License file for more information.
