@@ -4,7 +4,7 @@
 [![HitCount](http://hits.dwyl.io/dipu989/Tech-Feeds.svg)](http://hits.dwyl.io/dipu989/Tech-Feeds)
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Tech-Feeds/community#)<br>
 
-## About App
+## About App.
 
 This App shows top tech news :newspaper: in user's feed. This app uses HackerNews API to fetch latest news and display on the screen. Users can read more about the news by clicking on any one of them.
 
