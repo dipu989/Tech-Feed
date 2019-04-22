@@ -35,4 +35,4 @@ Any Suggestions?<br>
 Feel free to join our [chat](https://gitter.im/Tech-Feeds/community#) channel.
 
 ## License
-Tech-Feeds app is registered under the MIT License. Checkout License file for more information.
+Tech-Feeds app is registered under the MIT License. Checkout License.md file for more information.
