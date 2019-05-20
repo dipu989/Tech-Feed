@@ -8,7 +8,7 @@
 
 This App shows top tech news :newspaper: in user's feed. This app uses HackerNews API to fetch latest news and display on the screen. Users can read more about the news by clicking on any one of them.
 
-## How to Build Your own instance?
+## How to Build Your Own Instance?
 
 ### Requirements
 1) Git
