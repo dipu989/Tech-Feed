@@ -13,6 +13,7 @@ This App shows top tech news :newspaper: in user's feed. This app uses HackerNew
 ### Requirements
 1) Git
 2) Android Studio
+3) Knowledge of Core Java and Kotlin
 
 ### Steps
 
