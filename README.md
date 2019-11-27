@@ -17,7 +17,7 @@ This App shows top tech news :newspaper: in user's feed. This app uses HackerNew
 ### Steps
 
 1) Go ahead and fork the Project to make your own instance of this project.
-2) Then type `git clone https://github.com/your_usernam/Tech-Feeds`
+2) Then type `git clone https://github.com/<your_username>/Tech-Feeds`
 3) Build this project using android studio.
 
 
